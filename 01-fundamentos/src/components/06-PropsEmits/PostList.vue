@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    <PostDetail v-for="post in info" :key="post.id" :post="post" @showAlert="showAlert" />
+    <PostDetailSetup v-for="post in info" :key="post.id" :post="post" @showAlert="showAlert" />
   </div>
 </template>
 
 <script lang="ts" setup>
-  import PostDetail from "./PostDetail.vue";
+  // import PostDetail from "./PostDetail.vue";
+  import PostDetailSetup from "./PostDetailSetup.vue";
 
   interface IPost {
     id: number,
