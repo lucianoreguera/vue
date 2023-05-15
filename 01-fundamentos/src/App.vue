@@ -21,7 +21,9 @@
 
   <!-- <ComputedOption /> -->
   <!-- <ComputedComposition /> -->
-  <ComputedCompositionSetup />
+  <!-- <ComputedCompositionSetup /> -->
+
+  <CustomDirectives />
 </template>
 
 <script lang="ts" setup>
@@ -37,7 +39,8 @@
 // import PostList from './components/06-PropsEmits/PostList.vue';
 // import ComputedOption from './components/07-ComputedProperties/ComputedOption.vue';
 // import ComputedComposition from './components/07-ComputedProperties/ComputedComposition.vue';
-import ComputedCompositionSetup from './components/07-ComputedProperties/ComputedCompositionSetup.vue';
+// import ComputedCompositionSetup from './components/07-ComputedProperties/ComputedCompositionSetup.vue';
+import CustomProperties from './components/CustomDirectives/CustomDirectives.vue';
 </script>
 
 <style>
