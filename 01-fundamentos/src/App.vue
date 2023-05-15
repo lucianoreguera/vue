@@ -22,8 +22,9 @@
   <!-- <ComputedOption /> -->
   <!-- <ComputedComposition /> -->
   <!-- <ComputedCompositionSetup /> -->
-
-  <CustomDirectives />
+  <!-- <CustomDirectives /> -->
+  
+  <ComputedExample />
 </template>
 
 <script lang="ts" setup>
@@ -40,7 +41,7 @@
 // import ComputedOption from './components/07-ComputedProperties/ComputedOption.vue';
 // import ComputedComposition from './components/07-ComputedProperties/ComputedComposition.vue';
 // import ComputedCompositionSetup from './components/07-ComputedProperties/ComputedCompositionSetup.vue';
-import CustomProperties from './components/CustomDirectives/CustomDirectives.vue';
+import ComputedExample from './components/07-ComputedProperties/ComputedExample.vue';
 </script>
 
 <style>
