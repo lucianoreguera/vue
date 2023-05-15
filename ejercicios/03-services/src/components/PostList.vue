@@ -2,7 +2,10 @@
   <div class="container">
     <h1>Listado de Posts</h1>
     <ul class="post-list">
-      <li class="post-detail" v-for="post in posts" :key="post.id">{{ post.title }}</li>
+      <li class="post-detail" v-for="post in posts" :key="post.id">
+        {{ post.title }}
+        <p class="view-more">view more...</p>
+      </li>
     </ul>
   </div>
 </template>
@@ -64,7 +67,8 @@
   })
 </script> -->
 
-<style scoped>
+<style scoped lang="scss">
+  $aliceblue: aliceblue;
   .container {
     max-width: 95%;
     margin: 0 auto;
@@ -80,7 +84,10 @@
     list-style-type: none;
     height: 100px;
     width: 200px;
-    background-color: aliceblue;
+    background-color: $aliceBlue;
     padding: 10px;
+  }
+  .view-more {
+    color: $crimson;
   }
 </style>
