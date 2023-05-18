@@ -1,0 +1,16 @@
+$card-bg-color: #ffffff;
+$card-border-radius: 8px;
+$card-padding: 16px;
+$card-width: 500px;
+$card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$primary-card-bg-color: #6A5ACD;
+$primary-card-text-color: #ffffff;
+$primary-card-link-color: #cd875a;
+
+@mixin card {
+  background-color: $card-bg-color;
+  border-radius: $card-border-radius;
+  padding: $card-padding;
+  box-shadow: $card-box-shadow;
+  width: $card-width;
+}
