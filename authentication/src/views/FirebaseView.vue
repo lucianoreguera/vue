@@ -45,7 +45,6 @@
         alert('Usuario validado en Firebase!')
       })
       .catch((err) => {
-        // alert(`Error: ${err}`)
         error.value = true
         messageError.value = `Error: ${err.message}`
       })
