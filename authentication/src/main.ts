@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app'
 import { Amplify } from 'aws-amplify'
 import awsExports from './aws-exports'
 import Emitter from 'tiny-emitter'
+import VueCookies from 'vue-cookies'
 import App from './App.vue'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -27,4 +28,4 @@ const app = createApp(App)
 app.config.globalProperties.$msalInstance = {}
 app.config.globalProperties.$emitter = new Emitter.TinyEmitter()
 
-app.use(router).mount('#app')
+app.use(router).use(VueCookies, { expires: '1d' }).mount('#app')

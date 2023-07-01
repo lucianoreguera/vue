@@ -44,9 +44,21 @@
 
     if (success) {
       alert('Exito!')
+      // La cookie y la se guarda en el AuthService
     } else {
       error.value = true
       messageError.value = 'Error en el proceso de login!'
     }
+  }
+
+  const takeInfoFromUser = () => {
+    // Cookies
+    // const token = $cookies.get('auth')
+    // Sessions
+    const token = $sessions.get('auth')
+  }
+
+  const logout = () => {
+    $sessions.destroy('auth')
   }
 </script>
