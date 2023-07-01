@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { initializeApp } from 'firebase/app'
 import { Amplify } from 'aws-amplify'
 import awsExports from './aws-exports'
+import Emitter from 'tiny-emitter'
 import App from './App.vue'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,4 +21,10 @@ const firebaseConfig = {
 }
 
 initializeApp(firebaseConfig)
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App)
+
+app.config.globalProperties.$msalInstance = {}
+app.config.globalProperties.$emitter = new Emitter.TinyEmitter()
+
+app.use(router).mount('#app')

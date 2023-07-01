@@ -1,11 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/auth">Backend</router-link> |
-    <router-link to="/firebase">Firebase</router-link> |
-    <router-link to="/social">Social</router-link> |
-    <router-link to="/aws">AWS</router-link> |
-    <router-link to="/azure">Azure</router-link>
+    <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
 </template>
