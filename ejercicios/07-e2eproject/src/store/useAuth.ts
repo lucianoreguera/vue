@@ -1,0 +1,21 @@
+import { ref } from 'vue'
+import { defineStore } from 'pinia'
+
+export const useAuth = defineStore('useAuth', {
+    state: () => {
+        return {
+            is_auth: ref(false)
+        }
+    },
+    actions: {
+        login(email: string, password: string): boolean {
+            if (email !== 'admin@admin.com' || password !== '12345678') {
+                this.is_auth = false
+                return false
+            }
+
+            this.is_auth = true
+            return true
+        }
+    }
+})
